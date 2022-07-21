@@ -7,6 +7,15 @@
     }
 }
 @media (max-width: 739px){
+    .modal-container{
+        max-width: 100%;
+    }
+    .carousel-cell{
+        width: 100%;
+    }
+    .auth-form__aside{
+        padding: 0 6px;
+    }
     .c-12{
         flex: 0 0 60%;
         max-width: 60%;
@@ -168,6 +177,9 @@
 @media (min-width: 740px) and (max-width: 1023px){
     .slider__bar-logo{
         height: 30vh;
+    }
+    .carousel-cell{
+        width: 27%;
     }
     .grid-col-2{
         max-width: 50%;

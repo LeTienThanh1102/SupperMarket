@@ -245,9 +245,6 @@
                                 
                             </li>
                             <li class="header__nav-item hiden_on-tablet">
-                                <a href="" class="header__nav-link">Tư vẫn chọn mua</a>
-                            </li>
-                            <li class="header__nav-item hiden_on-tablet">
                                 <a href="" class="header__nav-link">Thế giới mua sắm</a>
                             </li>
                             <li class="header__nav-item hiden_on-tablet">
@@ -256,10 +253,10 @@
                             <li class="header__nav-item hiden_on-tablet">
                                 <a href="" class="header__nav-link">Trợ giúp</a>
                             </li>
-                            <li class=" header__nav-use">
+                            <li class="header__nav-use">
                                 <img src="./assets/img/f8-icon.png" alt="" class="header__nav-use-img">
                                 <span class="header__nav-item-use-name">Tiến Thành</span>
-                                <ul class="header__nav-item-use-menu">
+                                <!-- <ul class="header__nav-item-use-menu">
                                     <li class="header__nav-item-use-items">
                                         <a href="">Tài khoản đăng nhập</a>
                                     </li>
@@ -272,7 +269,7 @@
                                     <li class="header__nav-item-use-items">
                                         <a href="">Đăng xuất</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
                         </ul>
                     </div>
@@ -326,9 +323,6 @@
                             </li>
                             <li class="header__navbar-item">
                                 <a href="" class="header__navbar-link">Máy giặt</a>
-                            </li>
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-link">Nồi cơm</a>
                             </li>
                             <li class="header__navbar-item">
                                 <a href="" class="header__navbar-link">Điều hòa</a>
@@ -412,7 +406,7 @@
                             <div class="app__product-logo" style="background-image: url(/assets/img/anhbia.png);"></div>
                         </div>
                         <div class="home-product">
-                            <div class="carousel" data-flickity='{ "groupCells": 2,"pageDots": false,"wrapAround": true,"autoPlay": true }'>
+                            <div class="carousel" data-flickity='{ "groupCells": 1,"pageDots": false,"wrapAround": true,"autoPlay": 1500 }'>
                                 <div class="carousel-cell">
                                     <a class="home-product-items" href="">
                                             <div class="home-product-link">
@@ -1926,6 +1920,121 @@
             </div>
         </div>
     </div>
+
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-name">
+                    <h3 class="modal-name-quanty active modal-name-1 ">Đăng kí</h3>
+                    <h3 class="modal-name-quanty modal-name-2">Đăng nhập</h3>
+                </div>
+            </div>
+            <div class="modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="model-body">
+                <div class="model-register active1">
+                    <div class="auth-form__group">
+                        <h3 class="auth-form-name-input">Số điện thoại</h3>
+                        <input type="text" class="auth-form__input" placeholder="My Number Phone">
+                    </div>
+                    <div class="auth-form__group">
+                        <h3 class="auth-form-name-input">Email</h3>
+                        <input type="email" class="auth-form__input" placeholder="Your Email">
+                    </div>
+                    <div class="auth-form__group">
+                        <h3 class="auth-form-name-input">Mật khẩu</h3>
+                        <input type="password"  class="auth-form__input" placeholder="Your Password ">
+                    </div>
+                    <div class="auth-form__group">
+                        <h3 class="auth-form-name-input">Nhập lại mật khẩu</h3>
+                        <input type="password" class="auth-form__input" placeholder="Password again">
+                    </div>
+                    <div class="auth-form__controls">
+                        <input class="btn btn--primary" type="submit" value="ĐĂNG KÍ"></input>
+                        <button class="btn auth-form__controls-back btn--normal" >TRỞ LẠI</button>
+
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__poli">
+                            Bằng việc đăng kí, bạn đã đồng ý với web về
+                            <a href="" class="auth-form__link">Điều khoản và Dịch vụ</a> &
+                            <a href="" class="auth-form__link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="model-register">
+                    <div class="auth-form__group">
+                        <h3 class="auth-form-name-input">Tên tài khoản</h3>
+                        <input type="text" class="auth-form__input" placeholder="Phone/Email">
+                    </div>
+                    <div class="auth-form__group">
+                        <h3 class="auth-form-name-input">Nhập mật khẩu</h3>
+                        <input type="password" class="auth-form__input" placeholder="Your Password ">
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__link">Quên mật khẩu</a>
+                            <span class="auth-form__sep"></span>
+                            <a href="" class="auth-form__link auth-form__link-color">Cần trợ giúp</a>
+                        </div>
+                     </div>
+                    <div class="auth-form__social">
+                        <a href="" class="auth-form__social--face btn btn--size-s btn--width-icon">
+                            <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__social-title">
+                                Kết nối với Facebook
+                            </span> 
+                        </a>
+
+                        <a href="" class="auth-form__social--gg btn btn--size-s btn--width-icon">
+                            <i class=" fa-brands fa-google"></i>
+                            <span class="auth-form__social-title">
+                               Kết nối với Google
+                            </span> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+    var headerUse=document.querySelector('.header__nav-use');
+    var model=document.querySelector('.modal')
+    var modalContainer=document.querySelector('.modal-container')
+
+    var closes=document.querySelector('.modal-close')
+    var tabs=document.querySelectorAll('.modal-name-quanty')
+    var panes=document.querySelectorAll('.model-register')
+    var $ = document.querySelector.bind(document)
+    headerUse.onclick = function(){
+        model.classList.add('open');
+    }
+    closes.onclick=function(){
+        model.classList.remove('open');
+    }
+    model.onclick=function(){
+        model.classList.remove('open');
+    }
+    modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+    tabs.forEach((tab,index) => {
+        const pane=panes[index]
+        tab.onclick=function(){
+            $('.modal-name-quanty.active').classList.remove('active')
+            $('.model-register.active1').classList.remove('active1')
+           
+            this.classList.add('active');
+            pane.classList.add('active1');
+        }
+    })
+
+</script>
 </html>
